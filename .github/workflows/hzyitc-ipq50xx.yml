@@ -11,9 +11,9 @@ env:
   DIY_SCRIPT: script/ipq50xx.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
-  FIRMWARE_RELEASE: true
+  FIRMWARE_RELEASE: false
   FIRMWARE_TAG: ipq50xx
   TZ: Asia/Shanghai
 
