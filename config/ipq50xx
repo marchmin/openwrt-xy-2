@@ -1,70 +1,76 @@
 CONFIG_TARGET_ipq50xx=y
 CONFIG_TARGET_ipq50xx_arm=y
-CONFIG_TARGET_MULTI_PROFILE=y
-CONFIG_TARGET_DEVICE_ipq50xx_arm_DEVICE_cmcc_mr3000d-04=y
-CONFIG_TARGET_DEVICE_PACKAGES_ipq50xx_arm_DEVICE_cmcc_mr3000d-04=""
-#CONFIG_TARGET_DEVICE_ipq50xx_arm_DEVICE_redmi_ax3000=y
-#CONFIG_TARGET_DEVICE_PACKAGES_ipq50xx_arm_DEVICE_redmi_ax3000=""
-#CONFIG_TARGET_DEVICE_ipq50xx_arm_DEVICE_xiaomi_cr881x=y
-#CONFIG_TARGET_DEVICE_PACKAGES_ipq50xx_arm_DEVICE_xiaomi_cr881x=""
-CONFIG_TARGET_PER_DEVICE_ROOTFS=y
-
-CONFIG_LUCI_LANG_zh_Hans=y
-# CONFIG_PACKAGE_dnsmasq is not set
-CONFIG_PACKAGE_dnsmasq-full=y
-
+CONFIG_TARGET_ipq50xx_arm_DEVICE_cmcc_mr3000d-04=y
 # CONFIG_ATH11K_MEM_PROFILE_1G is not set
 CONFIG_ATH11K_MEM_PROFILE_512M=y
-CONFIG_PACKAGE_cgi-io=y
+CONFIG_ATH11K_THERMAL=y
+CONFIG_COREMARK_ENABLE_MULTITHREADING=y
+CONFIG_COREMARK_NUMBER_OF_THREADS=16
+CONFIG_COREMARK_OPTIMIZE_O3=y
+CONFIG_HTOP_LMSENSORS=y
+CONFIG_PACKAGE_TURBOACC_INCLUDE_BBR_CCA=y
+# CONFIG_PACKAGE_TURBOACC_INCLUDE_FLOW_OFFLOADING is not set
+CONFIG_PACKAGE_TURBOACC_INCLUDE_NO_FASTPATH=y
+CONFIG_PACKAGE_autocore-arm=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_ip-tiny=y
 CONFIG_PACKAGE_iptables-mod-extra=y
-CONFIG_PACKAGE_kmod-bonding=y
+CONFIG_PACKAGE_kmod-crypto-acompress=y
+CONFIG_PACKAGE_kmod-crypto-des=y
+CONFIG_PACKAGE_kmod-crypto-md4=y
+CONFIG_PACKAGE_kmod-crypto-md5=y
+CONFIG_PACKAGE_kmod-crypto-sha512=y
+CONFIG_PACKAGE_kmod-hwmon-core=y
+CONFIG_PACKAGE_kmod-ifb=y
 CONFIG_PACKAGE_kmod-ipt-extra=y
+# CONFIG_PACKAGE_kmod-ipt-offload is not set
+CONFIG_PACKAGE_kmod-leds-gpio=y
+CONFIG_PACKAGE_kmod-lib-lz4=y
+CONFIG_PACKAGE_kmod-lib-lzo=y
+CONFIG_PACKAGE_kmod-lib-zstd=y
+CONFIG_PACKAGE_kmod-mtd-rw=y
+# CONFIG_PACKAGE_kmod-nf-flow is not set
+CONFIG_PACKAGE_kmod-nls-base=y
+CONFIG_PACKAGE_kmod-nls-utf8=y
 CONFIG_PACKAGE_kmod-qca-nss-drv-pppoe=y
 CONFIG_PACKAGE_kmod-qca-nss-ecm-standard=y
-CONFIG_PACKAGE_libiwinfo-lua=y
-CONFIG_PACKAGE_liblua=y
-CONFIG_PACKAGE_liblucihttp=y
-CONFIG_PACKAGE_liblucihttp-lua=y
-CONFIG_PACKAGE_libubus-lua=y
-CONFIG_PACKAGE_lua=y
-CONFIG_PACKAGE_luci=y
-CONFIG_PACKAGE_luci-app-firewall=y
-CONFIG_PACKAGE_luci-app-opkg=y
-CONFIG_PACKAGE_luci-base=y
-CONFIG_PACKAGE_luci-lib-base=y
-CONFIG_PACKAGE_luci-lib-ip=y
-CONFIG_PACKAGE_luci-lib-jsonc=y
-CONFIG_PACKAGE_luci-lib-nixio=y
-CONFIG_PACKAGE_luci-mod-admin-full=y
-CONFIG_PACKAGE_luci-mod-network=y
-CONFIG_PACKAGE_luci-mod-status=y
-CONFIG_PACKAGE_luci-mod-system=y
-CONFIG_PACKAGE_luci-proto-ipv6=y
-CONFIG_PACKAGE_luci-proto-ppp=y
-CONFIG_PACKAGE_luci-theme-bootstrap=y
-CONFIG_PACKAGE_rpcd=y
-CONFIG_PACKAGE_rpcd-mod-file=y
-CONFIG_PACKAGE_rpcd-mod-iwinfo=y
-CONFIG_PACKAGE_rpcd-mod-luci=y
-CONFIG_PACKAGE_rpcd-mod-rrdns=y
-CONFIG_PACKAGE_uhttpd=y
-CONFIG_PACKAGE_uhttpd-mod-ubus=y
-
-# CONFIG_PACKAGE_luci-app-passwall is not set
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Geoview=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy is not set
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Client=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Libev_Server is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Client is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_Rust_Server is not set
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Client=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server is not set
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox is not set
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus is not set
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_tuic_client=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y
-CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
-# CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray_Plugin is not set
+CONFIG_PACKAGE_kmod-sched-core=y
+CONFIG_PACKAGE_kmod-tcp-bbr=y
+CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_kmod-zram=y
+CONFIG_PACKAGE_libatomic=y
+CONFIG_PACKAGE_libcap=y
+CONFIG_PACKAGE_libltdl=y
+CONFIG_PACKAGE_libminiupnpc=y
+CONFIG_PACKAGE_libnatpmp=y
+CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_librrd1=y
+CONFIG_PACKAGE_libsensors=y
+CONFIG_PACKAGE_libstdcpp=y
+CONFIG_PACKAGE_libsysfs=y
+CONFIG_PACKAGE_libuuid=y
+CONFIG_PACKAGE_libuv=y
+CONFIG_PACKAGE_libwebsockets-full=y
+CONFIG_PACKAGE_lm-sensors=y
+CONFIG_PACKAGE_luci-app-argon-config=y
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-natmap=y
+CONFIG_PACKAGE_luci-app-uhttpd=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-vlmcsd=y
+CONFIG_PACKAGE_luci-app-wol=y
+CONFIG_PACKAGE_luci-app-xlnetacc=y
+CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-natmap-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-uhttpd-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-xlnetacc-zh-cn=y
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_miniupnpd=y
+CONFIG_PACKAGE_natmap=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_rrdtool1=y
+CONFIG_PACKAGE_sysfsutils=y
+CONFIG_PACKAGE_zram-swap=y
