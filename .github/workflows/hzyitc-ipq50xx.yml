@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/hzyitc/openwrt-redmi-ax3000.git
+  REPO_URL: https://github.com/marchmin/openwrt-redmi-ax3000.git
   REPO_BRANCH: ipq50xx-qsdk-kernel-5.4-openwrt-21.02-qsdk-11.5.05.841.1029
   CONFIG_FILE: config/ipq50xx
   DIY_SCRIPT: script/ipq50xx.sh
